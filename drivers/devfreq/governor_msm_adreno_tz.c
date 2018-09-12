@@ -60,8 +60,6 @@ static DEFINE_SPINLOCK(suspend_lock);
 
 
 
-
-
 #if 1
 static unsigned int adrenoboost = 2;
 #endif
