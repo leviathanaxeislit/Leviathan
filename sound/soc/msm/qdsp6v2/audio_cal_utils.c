@@ -19,6 +19,10 @@
 #include <linux/mutex.h>
 #include <sound/audio_cal_utils.h>
 
+static int destroy_cal_lock_init;	
+static DEFINE_MUTEX(destroy_cal_lock);
+
+ static struct mutex destroy_cal_lock;	
 static DEFINE_MUTEX(destroy_cal_lock);
 
 static int unmap_memory(struct cal_type_data *cal_type,
